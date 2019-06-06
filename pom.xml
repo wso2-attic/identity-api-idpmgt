@@ -228,7 +228,7 @@
         <swagger.jaxrs.version>1.5.2</swagger.jaxrs.version>
         <maven.war.plugin.version>2.2</maven.war.plugin.version>
 
-        <carbon.identity.framework.version>5.12.106</carbon.identity.framework.version>
+        <carbon.identity.framework.version>5.12.385-SNAPSHOT</carbon.identity.framework.version>
         <carbon.identity.framework.version.range>[5.11.0, 6.0.0]</carbon.identity.framework.version.range>
 
         <maven.scr.plugin.version>1.24.0</maven.scr.plugin.version>
