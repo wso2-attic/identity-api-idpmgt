@@ -143,6 +143,8 @@ paths:
       parameters:
         - $ref : '#/parameters/limit'
         - $ref : '#/parameters/offset'
+        - $ref : '#/parameters/filter'
+        - $ref : '#/parameters/sort'
         - $ref : '#/parameters/spTenantDomain'
       tags:
         - IdP (Collection)
@@ -976,9 +978,10 @@ parameters:
   limit:
     name: limit
     in: query
+    required: false
     description: |
       Maximum size of resource array to return.
-    default: 25
+    default: 15
     type: integer
 
 # Used for pagination:
@@ -991,6 +994,25 @@ parameters:
       Starting point within the complete list of items qualified.
     default: 0
     type: integer
+
+# Used for filtering idps:
+  filter:
+    name: filter
+    in: query
+    required: false
+    description: |
+      Condition to filter the retrival of idps.
+      Only support filtering with idp name.
+    type: string
+
+# Used for sorting idps:
+  sort:
+    name: sort
+    in: query
+    required: false
+    description: |
+      Define the order how the retrived idps should be sorted.
+    type: string
 
 # The HTTP Authorization header
   Authorization:
