@@ -41,7 +41,7 @@ public class IdPConfigParser {
 
     private static Map<String, Object> configuration = new HashMap<>();
     private static SecretResolver secretResolver;
-    private static Log log = LogFactory.getLog(IdPConfigParser.class);
+    private static final Log log = LogFactory.getLog(IdPConfigParser.class);
     private OMElement rootElement;
 
     public IdPConfigParser() {
